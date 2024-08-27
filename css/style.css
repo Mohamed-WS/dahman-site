@@ -208,3 +208,10 @@ footer{
     margin-bottom:5px;
   }
 }
+
+.circular-img {
+  width: 100px; /* Set the width and height as needed */
+  height: 100px; 
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image fits well within the circle */
+}
