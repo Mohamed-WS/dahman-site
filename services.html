@@ -5,7 +5,7 @@
     <meta name="description" content="Affordable and professional web design">
 	  <meta name="keywords" content="web design, affordable web design, professional web design">
   	<meta name="author" content="Brad Traversy">
-    <title>ESIT for Training | Services</title>
+    <title>PEMAG for Training | Services</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/favicon.png">
   </head>
@@ -13,7 +13,7 @@
     <header>
       <div class="container">
         <div id="branding">
-          <h1><span class="highlight">E</span>SIT for Training</h1>
+          <h1><span class="highlight">P</span>EMAG innovations for training and consultancy</h1>
         </div>
         <nav>
           <ul>
@@ -41,20 +41,19 @@
           <h1 class="page-title">Services</h1>
           <ul id="services">
             <li>
-              <h3>HSE Training</h3>
-              <p>We offer you a high-level professional safety training program that is accredited by the state and recognized by major oil and mineral companies in the country. Your future is in your hands.
-                HSE Supervisor-agent or inspector.</p>
+              <h3>Agriculture innovations &Technology</h3>
+              <p>Safe Use of pesticides; 
+                Agriculture Marketing and Management ; Agricultural Operations Managers; Agriculture by Artificial intelligence: Drones & Robots..etc</p>
             </li>
             <li>
-              <h3>Petroleum and Mining Engineering Training</h3>
-              <p>We offer you a high-level professional petroleum engineering and mining courses program, that is accredited by the state and recognized by major oil and mineral companies in the country. Your future is in your hands.
-                Drilling training-Production training.-Seismic Waves Training- Mining Training: planning, operation,mining Engeneering..etc</p>
+              <h3>Petroleum & Mining Engineering</h3>
+              <p>Our offerings include courses in Drilling, Reservoir Engineering, Safety HSE, Production, and Mining Engineering, Blasting, Exploration and Exploitation along with softwares training for PETREL, TECHLOG, SERPAC, SCADA, Eclipse.. etc</p>
+            </p>
 						 
             </li>
             <li>
-              <h3>Software Training Courses</h3>
-              <p>We offer you a high-level professional in software training program, that is accredited by the state and recognized by major oil and mineral companies in the country as: PETREL ECLIPSE TECHLOG..SURPAC SCADA..EXCEL For mining and petroleum..etc . 
-                Your future is in your hands.</p>
+              <h3>Energy and sustainability</h3>
+              <p>Training provider. Our courses cover Energy Transition, Green Hydrogen, Climate Sciences & Low Carbon, Hydrology, Wind & Solar Energy, Electricity, Hydropower, Chemical Energy, and Radioactivity, among others. Equipping professionals with cutting-edge knowledge for a sustainable future.</p>
 						  
             </li>
           </ul>
@@ -84,7 +83,16 @@
     </section>
 
     <footer>
-      <p>ESIT for Training, Copyright &copy; 2023</p>
+      <p>ESIT for Training, Copyright &copy; <span id="currentYear"></span></p>
     </footer>
+
+    <script>
+      // Get the current year
+      const year = new Date().getFullYear();
+      
+      // Set the year in the footer
+      document.getElementById('currentYear').textContent = year;
+    </script>
+    
   </body>
 </html>
