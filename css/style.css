@@ -84,7 +84,6 @@ header a:hover{
 /* Showcase */
 #showcase{
   min-height:400px;
-  background: url('../img/dah.jpg') no-repeat;
   background-position: center;
   background-size: cover;
   text-align:center;
