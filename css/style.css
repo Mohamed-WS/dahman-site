@@ -226,3 +226,7 @@ footer{
   border-radius: 50%;
   object-fit: cover; /* Ensures the image fits well within the circle */
 }
+#branding img {
+  height: 50px; /* Adjust the height to your needs */
+  width: auto; /* Keep the aspect ratio */
+}
