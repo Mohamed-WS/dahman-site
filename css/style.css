@@ -367,14 +367,16 @@ footer {
 #contact-info .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; /* Align content at the top */
   height: 100%;
-  background-color: #f9f9f9;  /* Default background color */
-  transition: background-color 0.3s ease;  /* Smooth transition */
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+  padding: 20px; /* Optional: Add padding for better appearance */
 }
 
+
 #contact-info .card:hover {
-  background-color: #007bff;  /* Change background color on hover */
+  background-color: #4d98e8a2;  /* Change background color on hover */
   color: #fff;  /* Change text color on hover */
 }
 
