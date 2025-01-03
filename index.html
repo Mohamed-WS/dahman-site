@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="Affordable and professional web design">
-	  <meta name="keywords" content="web design, affordable web design, professional web design">
-  	<meta name="author" content="Brad Traversy">
-    <title>PEMAG innovations for training and consultancy | Welcome</title>
+    <meta name="keywords" content="web design, affordable web design, professional web design">
+    <meta name="author" content="Brad Traversy">
+    <title>PEMAG Innovations for Training and Consultancy | Welcome</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Asset 3.svg">
   </head>
@@ -14,7 +14,6 @@
       <div class="container">
         <div id="branding">
           <img src="img/PEMAG1 (2).svg" alt="PEMAG Logo" style="vertical-align: middle;" />
-            
         </div>
         <nav>
           <ul>
@@ -28,17 +27,17 @@
 
     <section id="showcase">
       <div class="container">
-        <h1>Petroleum,Mines,Energy and Agriculture:PEMAG innovations</h1>
-        <p>We have training plans aligned with the national strategic transformation which we seek through to improve the engineering profession in Mauritania 
-and raise the quality and creativity of the engineers to qualify and lead.</p>
+        <h1>Petroleum, Mines, Energy, and Agriculture: PEMAG Innovations</h1>
+        <p>We have training plans aligned with the national strategic transformation to improve the engineering profession in Mauritania and raise the quality and creativity of engineers to qualify and lead.</p>
+        <a href="services.html" class="button_1">Explore Our Services</a>
       </div>
     </section>
 
     <section id="newsletter">
       <div class="container">
         <h1>Subscribe To Our Mailing List</h1>
-        <form>
-          <input type="email" placeholder="Enter Email..." required>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="email" name="email" placeholder="Enter Email..." required>
           <button type="submit" class="button_1">Subscribe</button>
         </form>
       </div>
@@ -48,9 +47,8 @@ and raise the quality and creativity of the engineers to qualify and lead.</p>
       <div class="container">
         <div class="box">
           <img src="./img/Agri.jpeg" class="circular-img">
-          <h3>Agriculture innovations &Technology</h3>
-          <p>Safe Use of pesticides; 
-            Agriculture Marketing and Management; Agricultural Operations Managers; Agriculture by Artificial intelligence: Drones & Robots..etc</p>
+          <h3>Agriculture Innovations & Technology</h3>
+          <p>Safe Use of pesticides; Agriculture Marketing and Management; Agricultural Operations Managers; Agriculture by Artificial intelligence: Drones & Robots..etc</p>
         </div>
         <div class="box">
           <img src="./img/pet.jpg" class="circular-img">
@@ -59,24 +57,34 @@ and raise the quality and creativity of the engineers to qualify and lead.</p>
         </div>
         <div class="box">
           <img src="./img/energy.jpg" class="circular-img">
-          <h3>Energy and sustainability</h3>
+          <h3>Energy and Sustainability</h3>
           <p>Training provider. Our courses cover Energy Transition, Green Hydrogen, Climate Sciences & Low Carbon, Hydrology, Wind & Solar Energy, Electricity, Hydropower, Chemical Energy, and Radioactivity, among others. Equipping professionals with cutting-edge knowledge for a sustainable future.</p>
         </div>
       </div>
     </section>
-    
+
+    <section id="cta">
+      <div class="container">
+        <h2>Ready to Transform Your Skills?</h2>
+        <p>Join our training programs and take the first step towards a brighter future.</p>
+        <a href="services.html" class="button_1">Get Started</a>
+      </div>
+    </section>
 
     <footer>
-      <p>PEMAG for Training and consultancy, Copyright &copy; <span id="currentYear"></span></p>
+      <p>PEMAG for Training and Consultancy, Copyright &copy; <span id="currentYear"></span></p>
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+      </div>
     </footer>
 
     <script>
       // Get the current year
       const year = new Date().getFullYear();
-      
       // Set the year in the footer
       document.getElementById('currentYear').textContent = year;
     </script>
-    
   </body>
 </html>
