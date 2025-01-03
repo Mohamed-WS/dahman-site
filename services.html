@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="Affordable and professional web design">
-	  <meta name="keywords" content="web design, affordable web design, professional web design">
-  	<meta name="author" content="Brad Traversy">
-    <title>PEMAG innovations for training and consultancy | Services</title>
+    <meta name="keywords" content="web design, affordable web design, professional web design">
+    <meta name="author" content="Brad Traversy">
+    <title>PEMAG Innovations for Training and Consultancy | Services</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Asset 3.svg">
   </head>
@@ -13,11 +13,7 @@
     <header>
       <div class="container">
         <div id="branding">
-          <h1>
-            <img src="img/Asset 3.svg" alt="PEMAG Logo" style="vertical-align: middle;" />
-          innovations for training and consultancy
-          </h1>
-          
+          <img src="img/PEMAG1 (2).svg" alt="PEMAG Logo" style="vertical-align: middle;" />
         </div>
         <nav>
           <ul>
@@ -32,8 +28,8 @@
     <section id="newsletter">
       <div class="container">
         <h1>Subscribe To Our Mailing List</h1>
-        <form>
-          <input type="email" placeholder="Enter Email..." required>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="email" name="email" placeholder="Enter Email..." required>
           <button type="submit" class="button_1">Subscribe</button>
         </form>
       </div>
@@ -45,20 +41,16 @@
           <h1 class="page-title">Services</h1>
           <ul id="services">
             <li>
-              <h3>Agriculture innovations &Technology</h3>
-              <p>Safe Use of pesticides; 
-                Agriculture Marketing and Management ; Agricultural Operations Managers; Agriculture by Artificial intelligence: Drones & Robots..etc</p>
+              <h3>Agriculture Innovations & Technology</h3>
+              <p>Safe Use of pesticides; Agriculture Marketing and Management; Agricultural Operations Managers; Agriculture by Artificial intelligence: Drones & Robots..etc</p>
             </li>
             <li>
               <h3>Petroleum & Mining Engineering</h3>
-              <p>Our offerings include courses in Drilling, Reservoir Engineering, Safety HSE, Production, and Mining Engineering, Blasting, Exploration and Exploitation along with softwares training for PETREL, TECHLOG, SERPAC, SCADA, Eclipse.. etc</p>
-            </p>
-						 
+              <p>Our offerings include courses in Drilling, Reservoir Engineering, Safety HSE, Production, and Mining Engineering, Blasting, Exploration and Exploitation along with software training for PETREL, TECHLOG, SERPAC, SCADA, Eclipse..etc</p>
             </li>
             <li>
-              <h3>Energy and sustainability</h3>
-              <p>Training provider. Our courses cover Energy Transition, Green Hydrogen, Climate Sciences & Low Carbon, Hydrology, Wind & Solar Energy, Electricity, Hydropower, Chemical Energy, and Radioactivity, among others. Equipping professionals with cutting-edge knowledge for a sustainable future.</p>
-						  
+              <h3>Energy and Sustainability</h3>
+              <p>Training provider. Our courses cover Energy Transition, Green Hydrogen, Climate Sciences & Low Carbon, Hydrology, Wind & Solar Energy, Electricity, Hydropower, Chemical Energy, and Radioactivity, among others. Equipping professionals with cutting-edge knowledge for a sustainable future.</p>
             </li>
           </ul>
         </article>
@@ -66,37 +58,40 @@
         <aside id="sidebar">
           <div class="dark">
             <h3>Get A Quote</h3>
-            <form class="quote">
-  						<div>
-  							<label>Name</label><br>
-  							<input type="text" placeholder="Name">
-  						</div>
-  						<div>
-  							<label>Email</label><br>
-  							<input type="email" placeholder="Email Address">
-  						</div>
-  						<div>
-  							<label>Message</label><br>
-  							<textarea placeholder="Message"></textarea>
-  						</div>
-  						<button class="button_1" type="submit">Send</button>
-					</form>
+            <form class="quote" action="https://formspree.io/f/your-form-id" method="POST">
+              <div>
+                <label>Name</label><br>
+                <input type="text" name="name" placeholder="Name" required>
+              </div>
+              <div>
+                <label>Email</label><br>
+                <input type="email" name="email" placeholder="Email Address" required>
+              </div>
+              <div>
+                <label>Message</label><br>
+                <textarea name="message" placeholder="Message" required></textarea>
+              </div>
+              <button class="button_1" type="submit">Send</button>
+            </form>
           </div>
         </aside>
       </div>
     </section>
 
     <footer>
-      <p>PEMAG for Training and consultancy, Copyright &copy; <span id="currentYear"></span></p>
+      <p>PEMAG for Training and Consultancy, Copyright &copy; <span id="currentYear"></span></p>
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+      </div>
     </footer>
 
     <script>
       // Get the current year
       const year = new Date().getFullYear();
-      
       // Set the year in the footer
       document.getElementById('currentYear').textContent = year;
     </script>
-    
   </body>
 </html>
