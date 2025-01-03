@@ -1,13 +1,16 @@
+/* Updated Global Styles */
 body {
-  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  line-height: 1.6;
   padding: 0;
   margin: 0;
   background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Global */
 .container {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: auto;
   overflow: hidden;
 }
@@ -21,9 +24,17 @@ ul {
   height: 38px;
   background: #1f5cf7;
   border: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   color: #ffffff;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button_1:hover {
+  background: #4d98e8;
+  transform: translateY(-2px);
 }
 
 .dark {
@@ -34,20 +45,30 @@ ul {
   margin-bottom: 10px;
 }
 
-/* Header **/
+/* Updated Header */
 header {
-  background: #262626;
+  background: linear-gradient(135deg, #1f5cf7, #4d98e8);
   color: #ffffff;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #1f5cf7 3px solid;
+  padding: 20px 0;
+  border-bottom: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header a {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #ffdd57;
+}
+
+header .highlight, header .current a {
+  color: #ffdd57;
 }
 
 header li {
@@ -69,22 +90,15 @@ header nav {
   margin-top: 10px;
 }
 
-header .highlight, header .current a {
-  color: #1f5cf7;
-  font-weight: bold;
-}
-
-header a:hover {
-  color: #cccccc;
-  font-weight: bold;
-}
-
-/* Showcase */
+/* Updated Showcase */
 #showcase {
-  min-height: 400px;
+  min-height: 500px;
   position: relative;
   text-align: center;
-  color: #1f5cf7;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #showcase::before {
@@ -94,20 +108,21 @@ header a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../img/dah.png') no-repeat center center;
-  background-size: cover;
-  opacity: 0.3; /* Adjust this value to set the desired transparency */
-  z-index: -1; /* Ensure the image is behind the text */
+  background: url('../img/dah.png') no-repeat center center/cover;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 #showcase h1 {
-  margin-top: 100px;
-  font-size: 55px;
-  margin-bottom: 10px;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #showcase p {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 /* Newsletter */
@@ -166,26 +181,166 @@ article#main-col {
   width: 65%;
 }
 
-/* Services */
+/* Updated Services */
 ul#services li {
   list-style: none;
   padding: 20px;
-  border: #cccccc solid 1px;
-  margin-bottom: 5px;
-  background: #e6e6e6;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Footer */
+ul#services li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Updated Footer */
 footer {
-  padding: 20px;
-  margin-top: 20px;
+  padding: 40px 0;
+  margin-top: 40px;
   color: #ffffff;
-  background-color: #1f5cf7;
+  background: linear-gradient(135deg, #1f5cf7, #4d98e8);
   text-align: center;
 }
 
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Circular Image */
+.circular-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.3);
+}
+
+/* Branding Logo */
+#branding img {
+  height: 50px;
+  width: auto;
+}
+
+/* Logo Container for Horizontal Alignment */
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.logo-container img {
+  height: 50px;
+  width: auto;
+}
+
+/* Updated Logo Container */
+.partner {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section Styles */
+#contact-info {
+  padding: 40px 0;
+  background-color: #f4f4f4;
+}
+
+#contact-info .container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+#contact-info .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#contact-info .card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#contact-info .card:hover {
+  background-color: #4d98e8a2;
+  color: #fff;
+}
+
+#contact-info .card .icon {
+  font-size: 40px;
+  color: #1f5cf7;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+#contact-info .card:hover .icon i {
+  color: #fff;
+}
+
+#contact-info .card .heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+#contact-info .card:hover .heading {
+  color: #fff;
+}
+
+#contact-info .card .body-content {
+  font-size: 14px;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+
+#contact-info .card:hover .body-content {
+  color: #fff;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#showcase, #services, #contact-info {
+  animation: fadeIn 1s ease-out;
+}
+
 /* Media Queries */
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   header #branding,
   header nav,
   header nav li,
@@ -205,6 +360,11 @@ footer {
 
   #showcase h1 {
     margin-top: 40px;
+    font-size: 40px;
+  }
+
+  #showcase p {
+    font-size: 18px;
   }
 
   #newsletter button, .quote button {
@@ -216,224 +376,13 @@ footer {
     width: 100%;
     margin-bottom: 5px;
   }
-}
 
-/* Circular Image */
-.circular-img {
-  width: 100px; /* Set the width and height as needed */
-  height: 100px; 
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image fits well within the circle */
-  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.3); /* Adds a shadow around the image */
-}
-
-/* Branding Logo */
-#branding img {
-  height: 50px; /* Adjust the height to your needs */
-  width: auto; /* Keep the aspect ratio */
-}
-
-/* Logo Container for Horizontal Alignment */
-.logo-container {
-  display: flex;
-  justify-content: space-around; /* Ensures logos are spaced evenly */
-  align-items: center; /* Vertically centers the logos */
-  gap: 20px; /* Adds space between logos */
-  padding: 10px 0; /* Adds padding above and below the logos */
-  flex-wrap: wrap; /* Allows logos to wrap if they overflow the container */
-}
-
-.logo-container img {
-  height: 50px; /* Adjust the height of each logo */
-  width: auto; /* Keep the aspect ratio */
-}
-
-
-/* Contact Section Styles */
-#contact-info {
-  padding: 40px 0;
-  background-color: #f4f4f4;
-}
-
-#contact-info .container {
-  max-width: 1170px;
-  margin: 0 auto;
-  
-}
-
-#contact-info .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-#contact-info .card {
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#contact-info .card .icon {
-  font-size: 40px;
-  color: #1f5cf7;
-  margin-bottom: 10px;
-}
-
-#contact-info .card .heading {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#contact-info .card .body-content {
-  font-size: 14px;
-  color: #333333;
-}
-
-/* Adjust Padding for Footer */
-footer {
-  background-color: #1f5cf7;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px;
-  width: 100%;
-  margin-top: 0; /* Adjust if necessary */
-}
-
-@media (max-width: 768px) {
-  #contact-info .card {
-      margin-bottom: 20px;
+  .logo-container {
+    gap: 10px;
   }
-}
 
-
-/* General Styling */
-.elementor-widget-container {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.42px;
-  line-height: 1.7;
-  color: #222222;
-  word-wrap: break-word;
-  box-sizing: border-box;
-  hyphens: manual;
-  text-rendering: optimizeLegibility;
-}
-
-/* RECENT NEWS Section */
-.section-head.layout-petro {
-  margin-bottom: 20px;
-  text-align: left; /* Align the section title to the left */
-}
-
-.section-main-title {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #333; /* Main title color */
-  margin: 0 0 10px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #1f5cf7; /* Blue underline for styling */
-}
-
-/* Adjustments for mobile */
-@media (max-width: 768px) {
-  .section-main-title {
-      font-size: 20px;
-      text-align: center; /* Center align the title on small screens */
+  .partner {
+    width: 80px;
+    height: 80px;
   }
-}
-
-#contact-info .row {
-  display: flex;
-  justify-content: space-between;
-}
-
-#contact-info .col-sm-4, #contact-info .col-md-4 {
-  display: flex;
-  flex-direction: column;
-}
-
-#contact-info .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;  /* Ensures all cards have the same height */
-}
-
-#contact-info .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align content at the top */
-  height: 100%;
-  background-color: #f9f9f9;
-  transition: background-color 0.3s ease;
-  padding: 20px; /* Optional: Add padding for better appearance */
-}
-
-
-#contact-info .card:hover {
-  background-color: #4d98e8a2;  /* Change background color on hover */
-  color: #fff;  /* Change text color on hover */
-}
-
-#contact-info .card .icon i, 
-#contact-info .card .heading, 
-#contact-info .card .body-content {
-  transition: color 0.3s ease;
-}
-
-#contact-info .card:hover .icon i,
-#contact-info .card:hover .heading,
-#contact-info .card:hover .body-content {
-  color: #fff;  /* Change text and icon color to white on hover */
-}
-
-
-.logo-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Adds space between logos */
-}
-
-.partner {
-  position: relative;
-  width: 120px; /* Set width for each partner logo */
-  height: 120px; /* Set height for each partner logo */
-  overflow: hidden;
-}
-
-.partner img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Ensures the image fits within the container */
-  transition: transform 0.3s ease; /* Adds smooth transition on hover */
-}
-
-.partner:hover img {
-  transform: scale(1.1); /* Zooms in the image on hover */
-}
-
-.illustration {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  font-size: 16px;
-}
-
-.partner:hover .illustration {
-  opacity: 1; /* Makes the illustration visible on hover */
 }
