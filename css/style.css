@@ -386,3 +386,15 @@ html {
     height: 80px;
   }
 }
+/* Neumorphism Effect */
+.neumorphism {
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.neumorphism:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
