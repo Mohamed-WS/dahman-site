@@ -284,6 +284,21 @@ header nav {
   background: #4d98e8;
   transform: translateY(-2px);
 }
+/* Placeholder Styling */
+#sidebar input::placeholder,
+#sidebar textarea::placeholder {
+  font-size: 0.9rem; /* Adjust font size to fit */
+  color: #999; /* Light gray color for placeholders */
+  opacity: 1; /* Ensure full visibility */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+#sidebar input:focus::placeholder,
+#sidebar textarea:focus::placeholder {
+  color: transparent; /* Hide placeholder on focus */
+}
 
 /* Main-col */
 article#main-col {
