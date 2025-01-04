@@ -168,20 +168,26 @@ header nav {
   width: 250px;
 }
 
-/* Boxes */
 #boxes {
   margin-top: 20px;
 }
 
+#boxes .container {
+  display: flex; /* Make the container a flexbox */
+  justify-content: space-between; /* Space out the boxes evenly */
+  gap: 20px; /* Add space between the boxes */
+}
+
 #boxes .box {
-  float: left;
+  flex: 1; /* Allow boxes to grow and take equal space */
   text-align: center;
-  width: 30%;
   padding: 20px;
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex; /* Make the box a flex container */
+  flex-direction: column; /* Stack content vertically */
 }
 
 #boxes .box:hover {
@@ -204,7 +210,10 @@ header nav {
 #boxes .box p {
   font-size: 16px;
   line-height: 1.6;
+  flex-grow: 1; /* Make the paragraph take up remaining space */
 }
+
+
 
 /* Sidebar */
 aside#sidebar {
