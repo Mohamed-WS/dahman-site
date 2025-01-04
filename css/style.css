@@ -286,30 +286,37 @@ footer .social-media img:hover {
 /* Logo Container for Horizontal Alignment */
 .logo-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-  padding: 10px 0;
-  flex-wrap: wrap;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping to the next line */
+  gap: 20px; /* Space between logos */
+  padding: 10px 0; /* Padding for better spacing */
 }
 
-.logo-container img {
-  height: 50px;
-  width: auto;
-}
-
-/* Updated Logo Container */
 .partner {
-  width: 120px;
-  height: 120px;
+  flex: 0 0 auto; /* Prevent flex items from shrinking or growing */
+  width: 120px; /* Set a fixed width for each logo */
+  height: 120px; /* Set a fixed height for each logo */
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Center the content */
+}
+
+.partner img {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
 }
 
 .partner:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1); /* Zoom effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.illustration {
+  margin-top: 10px; /* Space between the image and text */
+  font-size: 14px; /* Adjust font size */
+  color: #333; /* Text color */
 }
 
 /* Contact Section Styles */
