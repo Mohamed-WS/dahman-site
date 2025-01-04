@@ -460,3 +460,14 @@ html {
     height: 80px;
   }
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  #boxes .container {
+    flex-direction: column; /* Stack boxes vertically on small screens */
+  }
+
+  #boxes .box {
+    width: 100%; /* Full width for stacked boxes */
+  }
+}
