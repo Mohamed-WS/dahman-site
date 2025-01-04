@@ -1,43 +1,14 @@
-/* Global Styles */
+/* Updated Global Styles */
 body {
-  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.8;
-  font-size: 16px;
-  color: #333;
-  background-color: #f4f4f4;
-  margin: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  line-height: 1.6;
   padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  cursor: url('./img/cursor.png'), auto;
 }
 
-h1, h2, h3 {
-  font-family: 'Montserrat', 'Poppins', sans-serif;
-  font-weight: 700;
-  color: #1f5cf7;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-p {
-  font-size: 1rem;
-  color: #555;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -45,7 +16,11 @@ a {
   overflow: hidden;
 }
 
-/* Buttons */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .button_1 {
   height: 38px;
   background: #1f5cf7;
@@ -63,7 +38,6 @@ a {
   transform: translateY(-2px);
 }
 
-/* Dark Background */
 .dark {
   padding: 15px;
   background: #262626;
@@ -72,14 +46,12 @@ a {
   margin-bottom: 10px;
 }
 
-/* Header */
+/* Updated Header */
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   background: linear-gradient(135deg, #1f5cf7, #4d98e8);
   color: #ffffff;
-  padding: 10px 0;
+  padding: 20px 0;
+  border-bottom: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -119,15 +91,11 @@ header nav {
   margin-top: 10px;
 }
 
-/* Showcase Section */
 #showcase {
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
+  min-height: 400px;
   position: relative;
+  text-align: center;
+  color: #1f5cf7;
 }
 
 #showcase::before {
@@ -137,91 +105,77 @@ header nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/dah.png') no-repeat center center;
+  background: url('../img/dah.png') no-repeat center center;
   background-size: cover;
-  z-index: -1;
+  opacity: 0.3; /* Adjust this value to set the desired transparency */
+  z-index: -1; /* Ensure the image is behind the text */
 }
 
 #showcase h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
 }
 
 #showcase p {
-  font-size: 1.25rem;
-  max-width: 800px;
-  margin: 0 auto 30px;
+  font-size: 20px;
 }
-
 #showcase .button_1 {
-  font-size: 1rem;
-  padding: 12px 30px;
+  background: #1f5cf7;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* Newsletter Section */
+#showcase .button_1:hover {
+  background: #4d98e8;
+  transform: translateY(-2px);
+}
+
+/* Newsletter */
 #newsletter {
-  padding: 40px 0;
-  background: #1f5cf7;
-  color: #fff;
+  padding: 15px;
+  color: #ffffff;
+  background: #262626;
 }
 
 #newsletter h1 {
-  font-size: 1.75rem;
-  margin-bottom: 20px;
+  float: left;
 }
 
 #newsletter form {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  float: right;
+  margin-top: 15px;
 }
 
 #newsletter input[type="email"] {
-  padding: 10px;
-  width: 300px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
+  padding: 4px;
+  height: 25px;
+  width: 250px;
 }
 
-#newsletter input[type="email"]::placeholder {
-  color: #999;
-}
-
-#newsletter button {
-  background: #ffdd57;
-  color: #1f5cf7;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-#newsletter button:hover {
-  background: #ffc107;
-}
-
-/* Boxes Section */
 #boxes {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #boxes .container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  display: flex; /* Make the container a flexbox */
+  justify-content: space-between; /* Space out the boxes evenly */
+  gap: 20px; /* Add space between the boxes */
 }
 
 #boxes .box {
-  flex: 1;
+  flex: 1; /* Allow boxes to grow and take equal space */
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex; /* Make the box a flex container */
+  flex-direction: column; /* Stack content vertically */
 }
 
 #boxes .box:hover {
@@ -230,109 +184,44 @@ header nav {
 }
 
 #boxes .box img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   margin-bottom: 20px;
 }
 
 #boxes .box h3 {
-  font-size: 1.5rem;
+  font-size: 24px;
   margin-bottom: 15px;
 }
 
 #boxes .box p {
-  font-size: 1rem;
-  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  flex-grow: 1; /* Make the paragraph take up remaining space */
 }
 
-/* Sidebar Form */
-#sidebar {
+
+
+/* Sidebar */
+aside#sidebar {
   float: right;
   width: 30%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-#sidebar .dark {
-  background: #262626;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
 }
 
-#sidebar .dark:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-#sidebar h3 {
-  font-size: 1.5rem;
-  color: #ffdd57;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#sidebar .form-group {
-  margin-bottom: 20px;
-}
-
-#sidebar label {
-  display: block;
-  font-size: 0.9rem;
-  color: #fff;
-  margin-bottom: 5px;
-}
-
-#sidebar input[type="text"],
-#sidebar input[type="email"],
-#sidebar textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #444;
-  border-radius: 5px;
-  background: #333;
-  color: #fff;
-  font-size: 1rem;
-  transition: border-color 0.3s ease, background 0.3s ease;
-}
-
-#sidebar input[type="text"]:focus,
-#sidebar input[type="email"]:focus,
-#sidebar textarea:focus {
-  border-color: #1f5cf7;
-  background: #444;
-  outline: none;
-}
-
-#sidebar textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-#sidebar .button_1 {
-  width: 100%;
-  background: #1f5cf7;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-#sidebar .button_1:hover {
-  background: #4d98e8;
-  transform: translateY(-2px);
-}
-/* Main Column */
+/* Main-col */
 article#main-col {
   float: left;
   width: 65%;
 }
 
-/* Services Section */
+/* Updated Services */
 ul#services li {
   list-style: none;
   padding: 20px;
@@ -347,7 +236,7 @@ ul#services li:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+/* Updated Footer */
 footer {
   padding: 40px 0;
   margin-top: 40px;
@@ -385,46 +274,63 @@ footer .social-media img:hover {
   box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.3);
 }
 
-/* Logo Container */
+/* Branding Logo */
+#branding img {
+  height: 50px;
+  width: auto;
+}
+
+/* Logo Container for Horizontal Alignment */
 .logo-container {
   display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  gap: 20px;
-  padding: 10px 0;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping to the next line */
+  gap: 20px; /* Space between logos */
+  padding: 10px 0; /* Padding for better spacing */
 }
 
 .partner {
-  flex: 0 0 auto;
-  width: 120px;
-  height: 120px;
+  flex: 0 0 auto; /* Prevent flex items from shrinking or growing */
+  width: 120px; /* Set a fixed width for each logo */
+  height: 120px; /* Set a fixed height for each logo */
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
+  text-align: center; /* Center the content */
 }
 
 .partner img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
 }
 
 .partner:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1); /* Zoom effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
 }
 
 .illustration {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #333;
+  margin-top: 10px; /* Space between the image and text */
+  font-size: 14px; /* Adjust font size */
+  color: #333; /* Text color */
 }
 
-/* Contact Section */
+/* Contact Section Styles */
 #contact-info {
   padding: 40px 0;
   background-color: #f4f4f4;
+}
+
+#contact-info .container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+#contact-info .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #contact-info .card {
@@ -474,7 +380,12 @@ footer .social-media img:hover {
   color: #fff;
 }
 
-/* Animations */
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-In Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -486,27 +397,66 @@ footer .social-media img:hover {
   }
 }
 
-#showcase, #services, #cta, #contact-info {
+#showcase, #services, #contact-info {
   animation: fadeIn 1s ease-out;
 }
 
-/* Responsive Design */
+/* Media Queries */
 @media (max-width: 768px) {
-  header nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  #boxes .container {
-    flex-direction: column;
-  }
-
-  #boxes .box {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
     width: 100%;
   }
 
-  footer .container {
-    grid-template-columns: 1fr;
-    text-align: center;
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+
+  #showcase p {
+    font-size: 18px;
+  }
+
+  #newsletter button, .quote button {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .logo-container {
+    gap: 10px;
+  }
+
+  .partner {
+    width: 80px;
+    height: 80px;
   }
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  #boxes .container {
+    flex-direction: column; /* Stack boxes vertically on small screens */
+  }
+
+  #boxes .box {
+    width: 100%; /* Full width for stacked boxes */
+  }
+}
+
