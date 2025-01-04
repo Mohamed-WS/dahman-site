@@ -100,7 +100,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('../img/hero-bg.jpg') no-repeat center center/cover;
+  background: url('../img/dah.png') no-repeat center center/cover;
 }
 
 #showcase::before {
