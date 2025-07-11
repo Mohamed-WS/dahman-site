@@ -1,141 +1,325 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Affordable and professional web design">
-    <meta name="keywords" content="web design, affordable web design, professional web design">
-    <meta name="author" content="Brad Traversy">
-    <title>PEMAG Innovations for Training and Consultancy | About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about PEMAG Innovations - Your trusted partner in Petroleum, Energy, Mining, and Agriculture professional development. Discover our mission, vision, and expert team.">
+    <meta name="keywords" content="PEMAG about, training company, petroleum consultancy, energy experts, mining professionals, agriculture specialists, Mauritania">
+    <meta name="author" content="PEMAG Innovations">
+    <title>About Us | PEMAG Innovations - Leading Industry Experts</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Asset 3.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <header>
+    <!-- Loading Screen -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Enhanced Header -->
+    <header id="mainHeader">
       <div class="container">
         <div id="branding">
-          <img src="img/PEMAG1 (2).svg" alt="PEMAG Logo" style="vertical-align: middle;" />
+          <img src="img/PEMAG1 (2).svg" alt="PEMAG Innovations Logo" />
         </div>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="about.html">About</a></li>
+            <li><a href="about.html" class="current">About</a></li>
             <li><a href="services.html">Services</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="newsletter">
+    <!-- Enhanced About Hero Section -->
+    <section id="about-hero" class="animate-on-scroll">
       <div class="container">
-        <h1>Subscribe To Our Mailing List</h1>
+        <div class="corporate-badge">Established 2020</div>
+        <h1>Pioneering Excellence in Professional Development</h1>
+        <p>At PEMAG Innovations, we are dedicated to transforming careers and shaping the future of Petroleum, Energy, Mining, and Agriculture industries through world-class training and strategic consultancy.</p>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <i class="fas fa-users"></i>
+            <span class="stat-number" data-target="500">0</span>
+            <span class="stat-label">Professionals Trained</span>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-globe"></i>
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">Countries Reached</span>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-award"></i>
+            <span class="stat-number" data-target="98">0</span>
+            <span class="stat-label">Success Rate %</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="animate-on-scroll">
+      <div class="container">
+        <div>
+          <h1>Stay Connected With Industry Leaders</h1>
+          <p>Join our professional network and receive exclusive insights from our expert team</p>
+        </div>
         <form action="https://formspree.io/f/your-form-id" method="POST">
-          <input type="email" name="email" placeholder="Enter Email..." required>
-          <button type="submit" class="button_1">Subscribe</button>
+          <input type="email" name="email" placeholder="Enter your professional email..." required>
+          <button type="submit" class="button_1">
+            <i class="fas fa-paper-plane"></i>
+            Join Our Network
+          </button>
         </form>
       </div>
     </section>
 
-    <section id="main">
+    <!-- Enhanced Main Content Section -->
+    <section id="main" class="animate-on-scroll">
       <div class="container">
+        <!-- Mission & Vision Section -->
+        <div class="mission-vision-section">
+          <div class="mission-card">
+            <div class="card-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>Our Mission</h3>
+            <p>To empower professionals with cutting-edge knowledge and skills in Petroleum, Energy, Mining, and Agriculture sectors, fostering innovation and sustainable development across Africa and beyond. We strive to bridge the gap between industry demands and professional capabilities through comprehensive training and strategic consultancy services.</p>
+          </div>
+          <div class="vision-card">
+            <div class="card-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3>Our Vision</h3>
+            <p>To be the leading provider of professional development solutions in PEMAG sectors across Africa, recognized for our excellence in training delivery, innovative approaches, and commitment to sustainable industry practices. We envision a future where our graduates lead transformative changes in their respective industries.</p>
+          </div>
+        </div>
+
+        <!-- Enhanced About Content -->
         <article id="main-col">
-          <h1 class="page-title">About Us</h1>
-          <p>
-            Welcome to PEMAG (Petroleum, Energy, Mining & Agriculture) Company. We are a premier provider of comprehensive services in the petroleum, mining, energy, and agriculture sectors. Our offerings include training, inspections, consulting, auditing, and risk assessment in Health, Safety, and Environment (HSE). 
-            At PEMAG, we collaborate with leading companies and governmental ministries worldwide to deliver our expert services wherever they are needed. Our global reach and extensive industry expertise make us a trusted partner in advancing the safety, efficiency, and sustainability of your operations.
-            Explore our services and discover how PEMAG can support your business with world-class solutions.
-          </p>
-          <p class="dark">
-            At our start-up company, we specialize in the oil, gas, and mining sectors while also focusing on energy and agriculture. Our team consists of experts from around the globe, including the USA, Algeria, Portugal, France, and Tunisia. We provide a range of services, including consultation, advisory, training, and auditing, tailored to meet the needs of our clients. Collaborating with international companies, we ensure that our solutions are innovative and effective. We work closely with ministries, universities, and laborers to promote best practices in our fields. Our mission is to foster sustainable development and implement cutting-edge technologies. Through our extensive network and expertise, we aim to deliver impactful results for every project. Together, we strive to make a significant contribution to our industries. Your success is our commitment.
-          </p>
+          <h1 class="page-title">About PEMAG Innovations</h1>
+          
+          <div class="content-section">
+            <div class="content-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h2>Who We Are</h2>
+            <p>PEMAG Innovations stands as a beacon of excellence in professional training and consultancy across the Petroleum, Energy, Mining, and Agriculture sectors. Since our establishment, we have been at the forefront of delivering world-class educational solutions that bridge the gap between academic knowledge and industry requirements.</p>
+            
+            <p>Our comprehensive approach encompasses specialized training programs, strategic consultancy services, professional auditing, and risk assessment in Health, Safety, and Environment (HSE). We pride ourselves on our ability to collaborate with leading multinational corporations and governmental ministries worldwide, delivering our expertise wherever excellence is demanded.</p>
+          </div>
+
+          <div class="content-section">
+            <div class="content-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h2>Our Journey</h2>
+            <p class="highlight-text">Founded with a vision to revolutionize professional development in critical industries, PEMAG Innovations has grown from a local training provider to an internationally recognized institution. Our journey is marked by continuous innovation, strategic partnerships, and an unwavering commitment to excellence.</p>
+            
+            <p>Our team comprises seasoned experts from diverse geographical backgrounds including the USA, Algeria, Portugal, France, and Tunisia, bringing together a wealth of international experience and best practices. This global perspective enables us to deliver training programs that meet international standards while addressing local industry needs.</p>
+          </div>
+
+          <div class="content-section">
+            <div class="content-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h2>Strategic Partnerships</h2>
+            <p>We have forged strategic alliances with leading international companies, academic institutions, and government bodies to ensure our training programs remain at the cutting edge of industry developments. Our collaborative approach extends to working closely with ministries, universities, and industry practitioners to promote best practices and sustainable development.</p>
+            
+            <p>Through these partnerships, we ensure that our solutions are not only innovative and effective but also aligned with global standards and emerging industry trends. Our extensive network enables us to deliver impactful results for every project we undertake.</p>
+          </div>
+
+          <!-- Core Values Section -->
+          <div class="values-section">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+              <div class="value-item">
+                <i class="fas fa-star"></i>
+                <h4>Excellence</h4>
+                <p>Committed to delivering the highest quality training and consultancy services</p>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Innovation</h4>
+                <p>Continuously evolving our methodologies to incorporate latest industry advancements</p>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Integrity</h4>
+                <p>Maintaining the highest ethical standards in all our professional interactions</p>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-globe"></i>
+                <h4>Global Perspective</h4>
+                <p>Bringing international best practices while respecting local contexts</p>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-leaf"></i>
+                <h4>Sustainability</h4>
+                <p>Promoting environmentally responsible and sustainable industry practices</p>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-users"></i>
+                <h4>Collaboration</h4>
+                <p>Working closely with partners to achieve mutual success and growth</p>
+              </div>
+            </div>
+          </div>
         </article>
 
+        <!-- Enhanced Sidebar -->
         <aside id="sidebar">
           <div class="dark">
-            <h3>What We Do</h3>
-            <p>Training (Nebosh, IOSH, OSHA), Consulting, Audit, Risk Assessment, Collaboration, and Economic Contribution</p>
+            <h3>Our Expertise</h3>
+            <div class="expertise-list">
+              <div class="expertise-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <h4>Professional Training</h4>
+                  <p>NEBOSH, IOSH, OSHA certifications and specialized industry programs</p>
+                </div>
+              </div>
+              <div class="expertise-item">
+                <i class="fas fa-consulting"></i>
+                <div>
+                  <h4>Strategic Consulting</h4>
+                  <p>Expert advisory services for operational excellence and growth</p>
+                </div>
+              </div>
+              <div class="expertise-item">
+                <i class="fas fa-clipboard-check"></i>
+                <div>
+                  <h4>Auditing & Assessment</h4>
+                  <p>Comprehensive audits and risk assessments for regulatory compliance</p>
+                </div>
+              </div>
+              <div class="expertise-item">
+                <i class="fas fa-chart-line"></i>
+                <div>
+                  <h4>Economic Development</h4>
+                  <p>Contributing to sustainable economic growth through human capital development</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Information Card -->
+          <div class="dark contact-card">
+            <h3>Get In Touch</h3>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span>Call Us</span>
+                  <p>Office: +222 47388997<br>Mobile: +222 36001192</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span>Email Us</span>
+                  <p>info@pemaginnovations.com<br>admin@pemaginnovations.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span>Visit Us</span>
+                  <p>Sokok Street, Waha Market<br>Nouakchott, Mauritania</p>
+                </div>
+              </div>
+            </div>
           </div>
         </aside>
       </div>
     </section>
 
-    <section id="partners">
+    <!-- Enhanced Partners Section -->
+    <section id="partners" class="animate-on-scroll">
       <div class="container">
-        <h2>Partners and Collaborators</h2>
+        <div class="section-header">
+          <h2>Strategic Partners & Collaborators</h2>
+          <p>Building strong relationships with industry leaders worldwide</p>
+        </div>
         <div class="logo-container">
           <div class="partner">
-        <img src="img/CEI.svg" alt="Logo 1">
-        <div class="illustration"></div>
-    </div>
-    <div class="partner">
-        <img src="img/4-UN.jpg" alt="Logo 2">
-        <div class="illustration"></div>
-    </div>
-    <div class="partner">
-        <img src="img/BSS.png" alt="Logo 3">
-        <div class="illustration"></div>
-    </div>
-
-    <div class="partner">
-      <img src="img/LOGO-MPG.jpg" alt="Logo 4">
-      <div class="illustration"></div>
-  </div>
-
-  <div class="partner">
-    <img src="img/PEGAS.png" alt="Logo 5">
-    <div class="illustration"></div>
-</div>
-
-<div class="partner">
-  <img src="img/HOT.jpg" alt="Logo 6">
-  <div class="illustration"></div>
-</div>
-
-<div class="partner">
-  <img src="img/idm.png " alt="Logo 7">
-  <div class="illustration"></div>
-</div>
-
-<div class="partner">
-  <img src="img/logoCEo.png " alt="Logo 8">
-  <div class="illustration"></div>
-</div>
-
-<div class="partner">
-  <img src="img/etarmr.png " alt="Logo 3">
-  <div class="illustration"></div>
-</div>
-          <!-- Add other logos similarly -->
+            <img src="img/CEI.svg" alt="CEI Partner">
+          </div>
+          <div class="partner">
+            <img src="img/4-UN.jpg" alt="UN Partner">
+          </div>
+          <div class="partner">
+            <img src="img/BSS.png" alt="BSS Partner">
+          </div>
+          <div class="partner">
+            <img src="img/LOGO-MPG.jpg" alt="MPG Partner">
+          </div>
+          <div class="partner">
+            <img src="img/PEGAS.png" alt="PEGAS Partner">
+          </div>
+          <div class="partner">
+            <img src="img/HOT.jpg" alt="HOT Partner">
+          </div>
+          <div class="partner">
+            <img src="img/idm.png" alt="IDM Partner">
+          </div>
+          <div class="partner">
+            <img src="img/logoCEo.png" alt="CEO Partner">
+          </div>
+          <div class="partner">
+            <img src="img/etarmr.png" alt="ETARMR Partner">
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact-info">
+    <!-- Enhanced Contact Info Section -->
+    <section id="contact-info" class="animate-on-scroll">
       <div class="container">
+        <div class="section-header">
+          <h2>Connect With Our Team</h2>
+          <p>Multiple ways to reach our professional experts</p>
+        </div>
         <div class="row">
-          <div class="col-sm-4 col-md-4">
+          <div class="contact-card-main">
             <div class="card">
-              <div class="icon"><i class="fa fa-phone"></i></div>
+              <div class="icon">
+                <i class="fas fa-phone"></i>
+              </div>
               <div class="body-content">
-                <div class="heading">CALL US NOW</div>
-                Office Telephone: +222 47388997<br>Mobile: +222 36001192
+                <div class="heading">Call Our Experts</div>
+                <p>Office: +222 47388997<br>Mobile: +222 36001192<br>Available Monday-Friday 9AM-6PM</p>
               </div>
             </div>
           </div>
-          <div class="col-sm-4 col-md-4">
+          <div class="contact-card-main">
             <div class="card">
-              <div class="icon"><i class="fa fa-map-marker"></i></div>
+              <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
               <div class="body-content">
-                <div class="heading">COME VISIT US</div>
-                Sokok Street; Waha Market; Nouakchott, Mauritania
+                <div class="heading">Visit Our Office</div>
+                <p>Sokok Street, Waha Market<br>Nouakchott, Mauritania<br>GPS: 18.0735°N, 15.9582°W</p>
               </div>
             </div>
           </div>
-          <div class="col-sm-4 col-md-4">
+          <div class="contact-card-main">
             <div class="card">
-              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <div class="icon">
+                <i class="fas fa-envelope"></i>
+              </div>
               <div class="body-content">
-                <div class="heading">SEND US A MESSAGE</div>
-                General: mohamedlevdalmsd@gmail.com<br>Administration: pemaginnovations@gmail.com
+                <div class="heading">Email Our Team</div>
+                <p>General: info@pemaginnovations.com<br>Training: training@pemaginnovations.com<br>Admin: admin@pemaginnovations.com</p>
               </div>
             </div>
           </div>
@@ -143,20 +327,512 @@
       </div>
     </section>
 
+    <!-- Enhanced Footer -->
     <footer>
-      <p>PEMAG for Training and Consultancy, Copyright &copy; <span id="currentYear"></span></p>
-      <div class="social-media">
-        <a href="https://facebook.com" target="_blank"><img src="img/facebook-brands-solid.svg" alt="Facebook"></a>
-        <a href="https://x.com" target="_blank"><img src="img/square-x-twitter-brands-solid.svg" alt="X"></a>
-        <a href="https://linkedin.com" target="_blank"><img src="img/linkedin-brands-solid.svg" alt="LinkedIn"></a>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>PEMAG Innovations</h3>
+            <p>Transforming careers through excellence in Petroleum, Energy, Mining, and Agriculture training.</p>
+            <div class="social-media">
+              <a href="https://facebook.com" target="_blank" aria-label="Follow us on Facebook">
+                <img src="img/facebook-brands-solid.svg" alt="Facebook">
+              </a>
+              <a href="https://x.com" target="_blank" aria-label="Follow us on X">
+                <img src="img/square-x-twitter-brands-solid.svg" alt="X">
+              </a>
+              <a href="https://linkedin.com" target="_blank" aria-label="Connect on LinkedIn">
+                <img src="img/linkedin-brands-solid.svg" alt="LinkedIn">
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Training Programs</h4>
+            <ul>
+              <li><a href="services.html#nebosh">NEBOSH Certification</a></li>
+              <li><a href="services.html#iosh">IOSH Training</a></li>
+              <li><a href="services.html#osha">OSHA Programs</a></li>
+              <li><a href="services.html#software">Software Training</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Sokok Street, Waha Market<br>Nouakchott, Mauritania</p>
+            <p><i class="fas fa-phone"></i> +222 47388997</p>
+            <p><i class="fas fa-envelope"></i> info@pemaginnovations.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="currentYear"></span> PEMAG Innovations for Training and Consultancy. All rights reserved.</p>
+        </div>
       </div>
     </footer>
 
+    <!-- Enhanced JavaScript -->
     <script>
-      // Get the current year
-      const year = new Date().getFullYear();
-      // Set the year in the footer
-      document.getElementById('currentYear').textContent = year;
+      // Page Loading Animation
+      window.addEventListener('load', function() {
+        setTimeout(() => {
+          document.getElementById('loadingOverlay').classList.add('hidden');
+        }, 1000);
+      });
+
+      // Scroll Progress Indicator
+      window.addEventListener('scroll', function() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('scrollProgress').style.width = scrolled + '%';
+      });
+
+      // Header Scroll Effect
+      window.addEventListener('scroll', function() {
+        const header = document.getElementById('mainHeader');
+        if (window.scrollY > 100) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Animate on Scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Animated Counters
+      function animateCounters() {
+        const counters = document.querySelectorAll('.stat-number');
+        counters.forEach(counter => {
+          const target = parseInt(counter.getAttribute('data-target'));
+          const count = parseInt(counter.innerText);
+          const increment = target / 100;
+          
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(() => animateCounters(), 20);
+          } else {
+            counter.innerText = target + (target === 98 ? '%' : '+');
+          }
+        });
+      }
+
+      // Trigger counter animation when hero section is visible
+      const statsObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounters();
+            statsObserver.unobserve(entry.target);
+          }
+        });
+      });
+
+      const heroSection = document.getElementById('about-hero');
+      if (heroSection) {
+        statsObserver.observe(heroSection);
+      }
+
+      // Set current year
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
     </script>
+
+    <!-- Additional Styles for About Page -->
+    <style>
+      #about-hero {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: var(--primary-gradient);
+        color: var(--white);
+        position: relative;
+        overflow: hidden;
+      }
+
+      #about-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('img/energy.jpg') center/cover;
+        opacity: 0.1;
+        z-index: 0;
+      }
+
+      #about-hero .container {
+        position: relative;
+        z-index: 1;
+      }
+
+      #about-hero h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 700;
+        margin-bottom: 30px;
+        line-height: 1.2;
+      }
+
+      #about-hero p {
+        font-size: 1.3rem;
+        max-width: 800px;
+        margin: 0 auto 40px;
+        opacity: 0.9;
+        line-height: 1.6;
+      }
+
+      .hero-stats {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+      }
+
+      .stat-card {
+        text-align: center;
+        background: rgba(255,255,255,0.1);
+        padding: 30px 20px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: var(--transition);
+        min-width: 200px;
+      }
+
+      .stat-card:hover {
+        transform: translateY(-10px);
+        background: rgba(255,255,255,0.15);
+      }
+
+      .stat-card i {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+      }
+
+      .stat-card .stat-number {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .stat-card .stat-label {
+        font-size: 1rem;
+        opacity: 0.9;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .mission-vision-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 60px;
+      }
+
+      .mission-card,
+      .vision-card {
+        background: var(--white);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: var(--shadow-light);
+        transition: var(--transition);
+        text-align: center;
+      }
+
+      .mission-card:hover,
+      .vision-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-heavy);
+      }
+
+      .card-icon {
+        font-size: 3rem;
+        color: var(--accent-color);
+        margin-bottom: 20px;
+      }
+
+      .mission-card h3,
+      .vision-card h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 20px;
+      }
+
+      .content-section {
+        margin-bottom: 50px;
+        position: relative;
+        padding-left: 80px;
+      }
+
+      .content-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 2.5rem;
+        color: var(--accent-color);
+      }
+
+      .content-section h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 20px;
+      }
+
+      .content-section p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: var(--text-secondary);
+        margin-bottom: 20px;
+      }
+
+      .highlight-text {
+        background: var(--background);
+        padding: 20px;
+        border-left: 4px solid var(--accent-color);
+        border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        font-style: italic;
+      }
+
+      .values-section {
+        margin-top: 60px;
+        text-align: center;
+      }
+
+      .values-section h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 40px;
+      }
+
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .value-item {
+        background: var(--white);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: var(--shadow-light);
+        transition: var(--transition);
+        text-align: center;
+      }
+
+      .value-item:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-medium);
+      }
+
+      .value-item i {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin-bottom: 20px;
+      }
+
+      .value-item h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 15px;
+      }
+
+      .value-item p {
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      .expertise-list {
+        margin-top: 20px;
+      }
+
+      .expertise-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      .expertise-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+
+      .expertise-item i {
+        font-size: 1.5rem;
+        color: var(--accent-color);
+        margin-top: 5px;
+      }
+
+      .expertise-item h4 {
+        color: var(--white);
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      .expertise-item p {
+        color: rgba(255,255,255,0.8);
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0;
+      }
+
+      .contact-card {
+        margin-top: 30px;
+      }
+
+      .contact-info {
+        margin-top: 20px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .contact-item i {
+        font-size: 1.2rem;
+        color: var(--accent-color);
+        margin-top: 5px;
+      }
+
+      .contact-item span {
+        color: var(--white);
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .contact-item p {
+        color: rgba(255,255,255,0.8);
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin: 0;
+      }
+
+      .contact-card-main {
+        width: 100%;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 15px;
+      }
+
+      .section-header p {
+        font-size: 1.2rem;
+        color: var(--text-secondary);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .hero-stats {
+          gap: 30px;
+        }
+
+        .stat-card {
+          min-width: 150px;
+          padding: 20px 15px;
+        }
+
+        .mission-vision-section {
+          grid-template-columns: 1fr;
+        }
+
+        .content-section {
+          padding-left: 60px;
+        }
+
+        .content-icon {
+          font-size: 2rem;
+        }
+
+        .values-grid {
+          grid-template-columns: 1fr;
+        }
+
+        article#main-col,
+        #sidebar {
+          width: 100%;
+          float: none;
+        }
+
+        article#main-col {
+          padding-right: 0;
+          margin-bottom: 40px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .content-section {
+          padding-left: 0;
+          text-align: center;
+        }
+
+        .content-icon {
+          position: relative;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
   </body>
 </html>

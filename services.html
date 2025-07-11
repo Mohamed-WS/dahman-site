@@ -1,97 +1,1072 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Affordable and professional web design">
-    <meta name="keywords" content="web design, affordable web design, professional web design">
-    <meta name="author" content="Brad Traversy">
-    <title>PEMAG Innovations for Training and Consultancy | Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover PEMAG Innovations' comprehensive training services in Petroleum, Energy, Mining, and Agriculture. Professional certification programs, consultancy services, and industry expertise.">
+    <meta name="keywords" content="PEMAG services, NEBOSH training, IOSH certification, petroleum engineering courses, energy training, mining education, agriculture programs, HSE training">
+    <meta name="author" content="PEMAG Innovations">
+    <title>Professional Training Services | PEMAG Innovations</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Asset 3.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <header>
+    <!-- Loading Screen -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Enhanced Header -->
+    <header id="mainHeader">
       <div class="container">
         <div id="branding">
-          <img src="img/PEMAG1 (2).svg" alt="PEMAG Logo" style="vertical-align: middle;" />
+          <img src="img/PEMAG1 (2).svg" alt="PEMAG Innovations Logo" />
         </div>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li class="current"><a href="services.html">Services</a></li>
+            <li><a href="services.html" class="current">Services</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="newsletter">
+    <!-- Services Hero Section -->
+    <section id="services-hero" class="animate-on-scroll">
       <div class="container">
-        <h1>Subscribe To Our Mailing List</h1>
+        <div class="corporate-badge">Professional Excellence</div>
+        <h1>Comprehensive Training & Consultancy Services</h1>
+        <p>Advance your career with our industry-leading programs designed by experts, for professionals who demand excellence in Petroleum, Energy, Mining, and Agriculture sectors.</p>
+        <div class="hero-features">
+          <div class="feature-highlight">
+            <i class="fas fa-certificate"></i>
+            <span>International Certifications</span>
+          </div>
+          <div class="feature-highlight">
+            <i class="fas fa-users-cog"></i>
+            <span>Expert-Led Training</span>
+          </div>
+          <div class="feature-highlight">
+            <i class="fas fa-globe"></i>
+            <span>Global Recognition</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="animate-on-scroll">
+      <div class="container">
+        <div>
+          <h1>Stay Updated on New Programs</h1>
+          <p>Be the first to know about our latest training opportunities and industry insights</p>
+        </div>
         <form action="https://formspree.io/f/your-form-id" method="POST">
-          <input type="email" name="email" placeholder="Enter Email..." required>
-          <button type="submit" class="button_1">Subscribe</button>
+          <input type="email" name="email" placeholder="Enter your professional email..." required>
+          <button type="submit" class="button_1">
+            <i class="fas fa-paper-plane"></i>
+            Subscribe Now
+          </button>
         </form>
       </div>
     </section>
 
-    <section id="main">
+    <!-- Enhanced Main Content Section -->
+    <section id="main" class="animate-on-scroll">
       <div class="container">
+        <!-- Enhanced Services Content -->
         <article id="main-col">
-          <h1 class="page-title">Services</h1>
-          <ul id="services">
-            <li>
-              <h3>Agriculture Innovations & Technology</h3>
-              <p>Safe Use of pesticides; Agriculture Marketing and Management; Agricultural Operations Managers; Agriculture by Artificial intelligence: Drones & Robots..etc</p>
-            </li>
-            <li>
-              <h3>Petroleum & Mining Engineering</h3>
-              <p>Our offerings include courses in Drilling, Reservoir Engineering, Safety HSE, Production, and Mining Engineering, Blasting, Exploration and Exploitation along with software training for PETREL, TECHLOG, SERPAC, SCADA, Eclipse..etc</p>
-            </li>
-            <li>
-              <h3>Energy and Sustainability</h3>
-              <p>Training provider. Our courses cover Energy Transition, Green Hydrogen, Climate Sciences & Low Carbon, Hydrology, Wind & Solar Energy, Electricity, Hydropower, Chemical Energy, and Radioactivity, among others. Equipping professionals with cutting-edge knowledge for a sustainable future.</p>
-            </li>
-          </ul>
+          <h1 class="page-title">Our Professional Services</h1>
+          
+          <!-- Agriculture Section -->
+          <div class="service-category" id="agriculture">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <div class="category-info">
+                <h2>Agriculture Innovation & Smart Technology</h2>
+                <p class="category-description">Transform your agricultural expertise with cutting-edge technology and sustainable practices</p>
+              </div>
+            </div>
+            
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI & Robotics in Agriculture</h3>
+                <p>Master the integration of artificial intelligence, drones, and robotic systems in modern farming operations. Learn precision agriculture techniques, automated farming solutions, and smart crop monitoring systems.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">Precision Farming</span>
+                  <span class="benefit-tag">Drone Operations</span>
+                  <span class="benefit-tag">AI Integration</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 6 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: Yes</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Sustainable Agriculture Practices</h3>
+                <p>Develop expertise in environmentally responsible farming methods, organic agriculture, integrated pest management, and sustainable crop rotation systems for long-term productivity.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">Organic Methods</span>
+                  <span class="benefit-tag">IPM Systems</span>
+                  <span class="benefit-tag">Soil Health</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 4 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: Yes</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Agricultural Marketing & Management</h3>
+                <p>Learn strategic marketing approaches, supply chain optimization, agricultural economics, and farm management systems to maximize profitability and market reach.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">Market Analysis</span>
+                  <span class="benefit-tag">Supply Chain</span>
+                  <span class="benefit-tag">Business Strategy</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 5 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: Yes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Petroleum & Mining Section -->
+          <div class="service-category" id="petroleum">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-oil-well"></i>
+              </div>
+              <div class="category-info">
+                <h2>Petroleum & Mining Engineering Excellence</h2>
+                <p class="category-description">Advanced training in petroleum technologies and mining operations with industry-standard software</p>
+              </div>
+            </div>
+            
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-drill"></i>
+                </div>
+                <h3>Drilling & Production Technologies</h3>
+                <p>Comprehensive training in drilling operations, well completion, production optimization, and enhanced oil recovery techniques using latest industry practices and technologies.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">Drilling Operations</span>
+                  <span class="benefit-tag">Well Completion</span>
+                  <span class="benefit-tag">Production Optimization</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 8 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: Professional</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Industry Software Training</h3>
+                <p>Master essential petroleum engineering software including PETREL, TECHLOG, SERPAC, SCADA, and Eclipse for reservoir modeling, log analysis, and production forecasting.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">PETREL</span>
+                  <span class="benefit-tag">TECHLOG</span>
+                  <span class="benefit-tag">Eclipse</span>
+                  <span class="benefit-tag">SCADA</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 6 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: Software Specialist</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-hard-hat"></i>
+                </div>
+                <h3>Mining Engineering & Safety</h3>
+                <p>Specialized training in mining operations, exploration techniques, blasting procedures, mine safety protocols, and environmental impact assessment for sustainable mining practices.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">Mine Planning</span>
+                  <span class="benefit-tag">Blasting Techniques</span>
+                  <span class="benefit-tag">Safety Protocols</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 10 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: Professional</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Energy & Sustainability Section -->
+          <div class="service-category" id="energy">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-solar-panel"></i>
+              </div>
+              <div class="category-info">
+                <h2>Energy Transition & Sustainability Leadership</h2>
+                <p class="category-description">Lead the future of energy with renewable technologies and sustainable solutions</p>
+              </div>
+            </div>
+            
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-wind"></i>
+                </div>
+                <h3>Renewable Energy Systems</h3>
+                <p>Comprehensive training in wind, solar, hydropower, and geothermal energy systems. Learn design, installation, maintenance, and grid integration of renewable energy technologies.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">Solar Power</span>
+                  <span class="benefit-tag">Wind Energy</span>
+                  <span class="benefit-tag">Grid Integration</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 7 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: Renewable Energy Professional</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-atom"></i>
+                </div>
+                <h3>Green Hydrogen & Advanced Energy</h3>
+                <p>Master emerging energy technologies including green hydrogen production, fuel cells, energy storage systems, and advanced battery technologies for the energy transition.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">Hydrogen Production</span>
+                  <span class="benefit-tag">Fuel Cells</span>
+                  <span class="benefit-tag">Energy Storage</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 6 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: Advanced Energy Specialist</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3>Climate Science & Carbon Management</h3>
+                <p>Develop expertise in climate science applications, carbon footprint assessment, emission reduction strategies, and environmental impact assessment for sustainable operations.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">Carbon Assessment</span>
+                  <span class="benefit-tag">Climate Analysis</span>
+                  <span class="benefit-tag">Sustainability</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 5 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: Climate Professional</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HSE Training Section -->
+          <div class="service-category" id="hse">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="category-info">
+                <h2>Health, Safety & Environment (HSE)</h2>
+                <p class="category-description">International HSE certifications and risk management expertise</p>
+              </div>
+            </div>
+            
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>NEBOSH Certification Programs</h3>
+                <p>Internationally recognized NEBOSH qualifications including General Certificate, Diploma, and specialized certificates for oil & gas, construction, and environmental management.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">International Recognition</span>
+                  <span class="benefit-tag">Career Advancement</span>
+                  <span class="benefit-tag">Industry Standard</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 12 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: NEBOSH Certified</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-user-shield"></i>
+                </div>
+                <h3>IOSH & OSHA Training</h3>
+                <p>Comprehensive IOSH Managing Safely and Working Safely programs, plus OSHA 30-hour and specialized safety training for various industries and workplace environments.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">IOSH Certified</span>
+                  <span class="benefit-tag">OSHA Compliance</span>
+                  <span class="benefit-tag">Safety Leadership</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 4-8 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: Multiple Options</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h3>Risk Assessment & Audit</h3>
+                <p>Professional training in risk assessment methodologies, safety auditing techniques, incident investigation, and emergency response planning for industrial operations.</p>
+                <div class="service-benefits">
+                  <span class="benefit-tag">Risk Analysis</span>
+                  <span class="benefit-tag">Audit Skills</span>
+                  <span class="benefit-tag">Emergency Planning</span>
+                </div>
+                <div class="service-details">
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Duration: 6 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification: Risk Professional</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
 
-      <aside id="sidebar">
-  <div class="dark">
-    <h3>Get A Quote</h3>
-    <form class="quote" action="https://formspree.io/f/your-form-id" method="POST">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
-      </div>
-      <button class="button_1" type="submit">Send Message</button>
-    </form>
-  </div>
-</aside>
+        <!-- Enhanced Sidebar -->
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Get A Personalized Quote</h3>
+            <p class="quote-intro">Tell us about your training needs and we'll create a customized program for you or your team.</p>
+            <form class="quote" action="https://formspree.io/f/your-form-id" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your professional email" required>
+              </div>
+              <div class="form-group">
+                <label for="company">Company/Organization</label>
+                <input type="text" id="company" name="company" placeholder="Your company name">
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interest</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="agriculture">Agriculture Innovation</option>
+                  <option value="petroleum">Petroleum Engineering</option>
+                  <option value="energy">Energy & Sustainability</option>
+                  <option value="hse">HSE Training</option>
+                  <option value="consulting">Consultancy Services</option>
+                  <option value="custom">Custom Training</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Training Requirements</label>
+                <textarea id="message" name="message" placeholder="Describe your specific training needs, team size, preferred dates, etc." required></textarea>
+              </div>
+              <button class="button_1" type="submit">
+                <i class="fas fa-paper-plane"></i>
+                Request Quote
+              </button>
+            </form>
+          </div>
+
+          <!-- Additional Services Info -->
+          <div class="dark services-info">
+            <h3>Why Choose PEMAG?</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fas fa-award"></i>
+                <div>
+                  <h4>Internationally Recognized</h4>
+                  <p>Our certifications are accepted worldwide</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-users"></i>
+                <div>
+                  <h4>Expert Instructors</h4>
+                  <p>Learn from industry professionals with years of experience</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-laptop"></i>
+                <div>
+                  <h4>Flexible Learning</h4>
+                  <p>Online, in-person, and hybrid training options</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-handshake"></i>
+                <div>
+                  <h4>Career Support</h4>
+                  <p>Ongoing support for career advancement</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Training Statistics -->
+          <div class="dark stats-card">
+            <h3>Training Impact</h3>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number" data-target="500">0</span>
+                <span class="stat-label">Professionals Trained</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="98">0</span>
+                <span class="stat-label">Success Rate %</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="25">0</span>
+                <span class="stat-label">Industry Partners</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-label">Countries Served</span>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
+    <!-- Enhanced Footer -->
     <footer>
-      <p>PEMAG for Training and Consultancy, Copyright &copy; <span id="currentYear"></span></p>
-      <div class="social-media">
-      <a href="https://facebook.com" target="_blank"><img src="img/facebook-brands-solid.svg" alt="Facebook"></a>
-        <a href="https://x.com" target="_blank"><img src="img/square-x-twitter-brands-solid.svg" alt="X"></a>
-        <a href="https://linkedin.com" target="_blank"><img src="img/linkedin-brands-solid.svg" alt="LinkedIn"></a>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>PEMAG Innovations</h3>
+            <p>Transforming careers through excellence in Petroleum, Energy, Mining, and Agriculture training.</p>
+            <div class="social-media">
+              <a href="https://facebook.com" target="_blank" aria-label="Follow us on Facebook">
+                <img src="img/facebook-brands-solid.svg" alt="Facebook">
+              </a>
+              <a href="https://x.com" target="_blank" aria-label="Follow us on X">
+                <img src="img/square-x-twitter-brands-solid.svg" alt="X">
+              </a>
+              <a href="https://linkedin.com" target="_blank" aria-label="Connect on LinkedIn">
+                <img src="img/linkedin-brands-solid.svg" alt="LinkedIn">
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Training Categories</h4>
+            <ul>
+              <li><a href="#agriculture">Agriculture Innovation</a></li>
+              <li><a href="#petroleum">Petroleum Engineering</a></li>
+              <li><a href="#energy">Energy & Sustainability</a></li>
+              <li><a href="#hse">HSE Certifications</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Popular Courses</h4>
+            <ul>
+              <li><a href="#nebosh">NEBOSH Certification</a></li>
+              <li><a href="#iosh">IOSH Training</a></li>
+              <li><a href="#software">Software Training</a></li>
+              <li><a href="#consulting">Consultancy Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Sokok Street, Waha Market<br>Nouakchott, Mauritania</p>
+            <p><i class="fas fa-phone"></i> +222 47388997</p>
+            <p><i class="fas fa-envelope"></i> training@pemaginnovations.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="currentYear"></span> PEMAG Innovations for Training and Consultancy. All rights reserved.</p>
+        </div>
       </div>
     </footer>
 
+    <!-- Enhanced JavaScript -->
     <script>
-      // Get the current year
-      const year = new Date().getFullYear();
-      // Set the year in the footer
-      document.getElementById('currentYear').textContent = year;
+      // Page Loading Animation
+      window.addEventListener('load', function() {
+        setTimeout(() => {
+          document.getElementById('loadingOverlay').classList.add('hidden');
+        }, 1000);
+      });
+
+      // Scroll Progress Indicator
+      window.addEventListener('scroll', function() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('scrollProgress').style.width = scrolled + '%';
+      });
+
+      // Header Scroll Effect
+      window.addEventListener('scroll', function() {
+        const header = document.getElementById('mainHeader');
+        if (window.scrollY > 100) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Animate on Scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Animated Counters for Sidebar Stats
+      function animateCounters() {
+        const counters = document.querySelectorAll('.stat-number');
+        counters.forEach(counter => {
+          const target = parseInt(counter.getAttribute('data-target'));
+          const count = parseInt(counter.innerText);
+          const increment = target / 100;
+          
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(() => animateCounters(), 20);
+          } else {
+            counter.innerText = target + (target === 98 ? '%' : '+');
+          }
+        });
+      }
+
+      // Trigger counter animation when stats section is visible
+      const statsObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounters();
+            statsObserver.unobserve(entry.target);
+          }
+        });
+      });
+
+      const statsSection = document.querySelector('.stats-card');
+      if (statsSection) {
+        statsObserver.observe(statsSection);
+      }
+
+      // Set current year
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Service card hover effects
+      document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-10px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0) scale(1)';
+        });
+      });
     </script>
+
+    <!-- Additional Styles for Services Page -->
+    <style>
+      #services-hero {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: var(--primary-gradient);
+        color: var(--white);
+        position: relative;
+        overflow: hidden;
+      }
+
+      #services-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('img/pet.jpg') center/cover;
+        opacity: 0.1;
+        z-index: 0;
+      }
+
+      #services-hero .container {
+        position: relative;
+        z-index: 1;
+      }
+
+      #services-hero h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 700;
+        margin-bottom: 30px;
+        line-height: 1.2;
+      }
+
+      #services-hero p {
+        font-size: 1.3rem;
+        max-width: 800px;
+        margin: 0 auto 40px;
+        opacity: 0.9;
+        line-height: 1.6;
+      }
+
+      .hero-features {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+      }
+
+      .feature-highlight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        color: var(--white);
+      }
+
+      .feature-highlight i {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+      }
+
+      .feature-highlight span {
+        font-weight: 500;
+        font-size: 1.1rem;
+      }
+
+      .service-category {
+        margin-bottom: 80px;
+        padding: 60px 0;
+        border-radius: 20px;
+        background: var(--white);
+        box-shadow: var(--shadow-light);
+      }
+
+      .service-category:nth-child(even) {
+        background: var(--background);
+      }
+
+      .category-header {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid var(--accent-color);
+      }
+
+      .category-icon {
+        font-size: 4rem;
+        color: var(--accent-color);
+        background: rgba(255,107,107,0.1);
+        padding: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .category-info h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 10px;
+      }
+
+      .category-description {
+        font-size: 1.2rem;
+        color: var(--text-secondary);
+        margin: 0;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+        padding: 0 30px;
+      }
+
+      .service-card {
+        background: var(--white);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: var(--shadow-light);
+        transition: var(--transition);
+        border: 2px solid transparent;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--secondary-gradient);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: 0;
+      }
+
+      .service-card:hover::before {
+        opacity: 0.05;
+      }
+
+      .service-card:hover {
+        box-shadow: var(--shadow-heavy);
+        border-color: var(--accent-color);
+      }
+
+      .service-card * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .service-card .service-icon {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      .service-card h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 15px;
+      }
+
+      .service-card p {
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .service-benefits {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+
+      .benefit-tag {
+        background: var(--accent-color);
+        color: var(--white);
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+
+      .service-details {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(0,0,0,0.1);
+      }
+
+      .detail-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+      }
+
+      .detail-item i {
+        color: var(--accent-color);
+      }
+
+      .quote-intro {
+        color: rgba(255,255,255,0.8);
+        margin-bottom: 25px;
+        line-height: 1.5;
+      }
+
+      .form-group select {
+        width: 100%;
+        padding: 15px 20px;
+        border: 2px solid transparent;
+        border-radius: var(--border-radius);
+        background: rgba(255,255,255,0.1);
+        color: var(--white);
+        font-size: 16px;
+        transition: var(--transition);
+        backdrop-filter: blur(10px);
+      }
+
+      .form-group select:focus {
+        outline: none;
+        border-color: var(--accent-color);
+        background: rgba(255,255,255,0.15);
+      }
+
+      .form-group select option {
+        background: var(--text-primary);
+        color: var(--white);
+      }
+
+      .services-info {
+        margin-top: 30px;
+      }
+
+      .info-list {
+        margin-top: 20px;
+      }
+
+      .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      .info-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+
+      .info-item i {
+        font-size: 1.3rem;
+        color: var(--accent-color);
+        margin-top: 5px;
+      }
+
+      .info-item h4 {
+        color: var(--white);
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      .info-item p {
+        color: rgba(255,255,255,0.8);
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin: 0;
+      }
+
+      .stats-card {
+        margin-top: 30px;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .stats-grid .stat-item {
+        text-align: center;
+        padding: 15px 10px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+      }
+
+      .stats-grid .stat-number {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--accent-color);
+        margin-bottom: 5px;
+      }
+
+      .stats-grid .stat-label {
+        font-size: 0.8rem;
+        color: rgba(255,255,255,0.8);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      @media (max-width: 768px) {
+        .hero-features {
+          gap: 30px;
+        }
+
+        .category-header {
+          flex-direction: column;
+          text-align: center;
+          gap: 20px;
+        }
+
+        .category-icon {
+          font-size: 3rem;
+          padding: 20px;
+        }
+
+        .category-info h2 {
+          font-size: 2rem;
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr;
+          padding: 0 15px;
+        }
+
+        .service-details {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        article#main-col,
+        #sidebar {
+          width: 100%;
+          float: none;
+        }
+
+        article#main-col {
+          padding-right: 0;
+          margin-bottom: 40px;
+        }
+
+        .stats-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .service-card {
+          padding: 25px;
+        }
+
+        .category-info h2 {
+          font-size: 1.8rem;
+        }
+
+        .service-benefits {
+          justify-content: center;
+        }
+      }
+    </style>
   </body>
 </html>
