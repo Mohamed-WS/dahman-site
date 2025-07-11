@@ -549,10 +549,10 @@ footer .social-media img:hover {
   overflow: visible;
 }
 
-/* Desktop: More logos per row */
+/* Desktop: All logos in one row */
 @media (min-width: 1200px) {
   .logo-container {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(9, 1fr);
   }
 }
 
@@ -628,6 +628,10 @@ footer .social-media img:hover {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #contact-info .card::before {
