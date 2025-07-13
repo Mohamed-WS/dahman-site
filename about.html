@@ -1,162 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Affordable and professional web design">
-    <meta name="keywords" content="web design, affordable web design, professional web design">
-    <meta name="author" content="Brad Traversy">
-    <title>PEMAG Innovations for Training and Consultancy | About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About PEMAG Innovations - Learn about our team, partners, and commitment to excellence in petroleum, mining, energy, and agriculture training">
+    <meta name="keywords" content="PEMAG about, company history, training expertise, international partners, HSE certification, petroleum consultancy">
+    <meta name="author" content="PEMAG Innovations">
+    <title>PEMAG Innovations for Training and Consultancy | About Us</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/Asset 3.svg">
+    <link rel="icon" href="img/Asset 3.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   </head>
   <body>
     <header>
       <div class="container">
         <div id="branding">
-          <img src="img/PEMAG1 (2).svg" alt="PEMAG Logo" style="vertical-align: middle;" />
+          <img src="img/PEMAG1 (2).svg" alt="PEMAG Innovations Logo - Training and Consultancy" width="auto" height="60" />
         </div>
-        <nav>
+        <nav aria-label="Main navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="about.html">About</a></li>
+            <li class="current"><a href="about.html" aria-current="page">About</a></li>
             <li><a href="services.html">Services</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="newsletter">
-      <div class="container">
-        <h1>Subscribe To Our Mailing List</h1>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-          <input type="email" name="email" placeholder="Enter Email..." required>
-          <button type="submit" class="button_1">Subscribe</button>
-        </form>
-      </div>
-    </section>
-
-    <section id="main">
-      <div class="container">
-        <article id="main-col">
-          <h1 class="page-title">About Us</h1>
-          <p>
-            Welcome to PEMAG (Petroleum, Energy, Mining & Agriculture) Company. We are a premier provider of comprehensive services in the petroleum, mining, energy, and agriculture sectors. Our offerings include training, inspections, consulting, auditing, and risk assessment in Health, Safety, and Environment (HSE). 
-            At PEMAG, we collaborate with leading companies and governmental ministries worldwide to deliver our expert services wherever they are needed. Our global reach and extensive industry expertise make us a trusted partner in advancing the safety, efficiency, and sustainability of your operations.
-            Explore our services and discover how PEMAG can support your business with world-class solutions.
-          </p>
-          <p class="dark">
-            At our start-up company, we specialize in the oil, gas, and mining sectors while also focusing on energy and agriculture. Our team consists of experts from around the globe, including the USA, Algeria, Portugal, France, and Tunisia. We provide a range of services, including consultation, advisory, training, and auditing, tailored to meet the needs of our clients. Collaborating with international companies, we ensure that our solutions are innovative and effective. We work closely with ministries, universities, and laborers to promote best practices in our fields. Our mission is to foster sustainable development and implement cutting-edge technologies. Through our extensive network and expertise, we aim to deliver impactful results for every project. Together, we strive to make a significant contribution to our industries. Your success is our commitment.
-          </p>
-        </article>
-
-        <aside id="sidebar">
-          <div class="dark">
-            <h3>What We Do</h3>
-            <p>Training (Nebosh, IOSH, OSHA), Consulting, Audit, Risk Assessment, Collaboration, and Economic Contribution</p>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="partners">
-      <div class="container">
-        <h2>Partners and Collaborators</h2>
-        <div class="logo-container">
-          <div class="partner">
-        <img src="img/CEI.svg" alt="Logo 1">
-        <div class="illustration"></div>
-    </div>
-    <div class="partner">
-        <img src="img/4-UN.jpg" alt="Logo 2">
-        <div class="illustration"></div>
-    </div>
-    <div class="partner">
-        <img src="img/BSS.png" alt="Logo 3">
-        <div class="illustration"></div>
-    </div>
-
-    <div class="partner">
-      <img src="img/LOGO-MPG.jpg" alt="Logo 4">
-      <div class="illustration"></div>
-  </div>
-
-  <div class="partner">
-    <img src="img/PEGAS.png" alt="Logo 5">
-    <div class="illustration"></div>
-</div>
-
-<div class="partner">
-  <img src="img/HOT.jpg" alt="Logo 6">
-  <div class="illustration"></div>
-</div>
-
-<div class="partner">
-  <img src="img/idm.png " alt="Logo 7">
-  <div class="illustration"></div>
-</div>
-
-<div class="partner">
-  <img src="img/logoCEo.png " alt="Logo 8">
-  <div class="illustration"></div>
-</div>
-
-<div class="partner">
-  <img src="img/etarmr.png " alt="Logo 3">
-  <div class="illustration"></div>
-</div>
-          <!-- Add other logos similarly -->
+    <main>
+      <section id="newsletter" aria-labelledby="newsletter-heading">
+        <div class="container">
+          <h2 id="newsletter-heading">Subscribe To Our Mailing List</h2>
+          <form action="https://formspree.io/f/your-form-id" method="POST" aria-label="Newsletter subscription form">
+            <label for="email" class="sr-only">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address..." required aria-describedby="email-help">
+            <button type="submit" class="button_1">Subscribe</button>
+          </form>
+          <div id="email-help" class="sr-only">Enter your email to receive updates about our training programs and services</div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact-info">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-md-4">
-            <div class="card">
-              <div class="icon"><i class="fa fa-phone"></i></div>
-              <div class="body-content">
-                <div class="heading">CALL US NOW</div>
-                Office Telephone: +222 47388997<br>Mobile: +222 36001192
-              </div>
+      <section id="main">
+        <div class="container">
+          <article id="main-col">
+            <h1 class="page-title">About Us</h1>
+            <p>
+              Welcome to PEMAG (Petroleum, Energy, Mining & Agriculture) Company. We are a premier provider of comprehensive services in the petroleum, mining, energy, and agriculture sectors. Our offerings include training, inspections, consulting, auditing, and risk assessment in Health, Safety, and Environment (HSE). 
+            </p>
+            <p>
+              At PEMAG, we collaborate with leading companies and governmental ministries worldwide to deliver our expert services wherever they are needed. Our global reach and extensive industry expertise make us a trusted partner in advancing the safety, efficiency, and sustainability of your operations.
+            </p>
+            <p>
+              Explore our services and discover how PEMAG can support your business with world-class solutions.
+            </p>
+            <p>
+              At our start-up company, we specialize in the oil, gas, and mining sectors while also focusing on energy and agriculture. Our team consists of experts from around the globe, including the USA, Algeria, Portugal, France, and Tunisia. We provide a range of services, including consultation, advisory, training, and auditing, tailored to meet the needs of our clients.
+            </p>
+            <p>
+              Collaborating with international companies, we ensure that our solutions are innovative and effective. We work closely with ministries, universities, and laborers to promote best practices in our fields. Our mission is to foster sustainable development and implement cutting-edge technologies. Through our extensive network and expertise, we aim to deliver impactful results for every project. Together, we strive to make a significant contribution to our industries. Your success is our commitment.
+            </p>
+          </article>
+
+          <aside id="sidebar">
+            <div class="dark">
+              <h3>What We Do</h3>
+              <p>Training (Nebosh, IOSH, OSHA), Consulting, Audit, Risk Assessment, Collaboration, and Economic Contribution</p>
             </div>
-          </div>
-          <div class="col-sm-4 col-md-4">
-            <div class="card">
-              <div class="icon"><i class="fa fa-map-marker"></i></div>
-              <div class="body-content">
-                <div class="heading">COME VISIT US</div>
-                Sokok Street; Waha Market; Nouakchott, Mauritania
-              </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="partners" aria-labelledby="partners-heading">
+        <div class="container">
+          <h2 id="partners-heading">Partners and Collaborators</h2>
+          <div class="logo-container">
+            <div class="partner">
+              <img src="img/CEI.svg" alt="CEI - Certification and Engineering Institute partner logo">
             </div>
-          </div>
-          <div class="col-sm-4 col-md-4">
-            <div class="card">
-              <div class="icon"><i class="fa fa-envelope"></i></div>
-              <div class="body-content">
-                <div class="heading">SEND US A MESSAGE</div>
-                General: mohamedlevdalmsd@gmail.com<br>Administration: pemaginnovations@gmail.com
-              </div>
+            <div class="partner">
+              <img src="img/4-UN.jpg" alt="United Nations - International development partner logo">
+            </div>
+            <div class="partner">
+              <img src="img/BSS.png" alt="BSS - Business Support Services partner logo">
+            </div>
+            <div class="partner">
+              <img src="img/LOGO-MPG.jpg" alt="MPG - Mining and Petroleum Group partner logo">
+            </div>
+            <div class="partner">
+              <img src="img/PEGAS.png" alt="PEGAS - Petroleum and Gas Services partner logo">
+            </div>
+            <div class="partner">
+              <img src="img/HOT.jpg" alt="HOT - Health and Occupational Training partner logo">
+            </div>
+            <div class="partner">
+              <img src="img/idm.png" alt="IDM - Industrial Development Management partner logo">
+            </div>
+            <div class="partner">
+              <img src="img/logoCEo.png" alt="CEO - Corporate Executive Organization partner logo">
+            </div>
+            <div class="partner">
+              <img src="img/etarmr.png" alt="ETARMR - Energy Technology and Resource Management partner logo">
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="contact-info" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading" class="sr-only">Contact Information</h2>
+          <div class="row">
+            <div class="col-sm-4 col-md-4">
+              <div class="card">
+                <div class="icon" aria-hidden="true">📞</div>
+                <div class="body-content">
+                  <div class="heading">CALL US NOW</div>
+                  <p>
+                    <strong>Office Telephone:</strong> <a href="tel:+22247388997">+222 47388997</a><br>
+                    <strong>Mobile:</strong> <a href="tel:+22236001192">+222 36001192</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="card">
+                <div class="icon" aria-hidden="true">📍</div>
+                <div class="body-content">
+                  <div class="heading">COME VISIT US</div>
+                  <p>
+                    <address>
+                      Sokok Street; Waha Market;<br>
+                      Nouakchott, Mauritania
+                    </address>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="card">
+                <div class="icon" aria-hidden="true">✉️</div>
+                <div class="body-content">
+                  <div class="heading">SEND US A MESSAGE</div>
+                  <p>
+                    <strong>General:</strong> <a href="mailto:mohamedlevdalmsd@gmail.com">mohamedlevdalmsd@gmail.com</a><br>
+                    <strong>Administration:</strong> <a href="mailto:pemaginnovations@gmail.com">pemaginnovations@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
-      <p>PEMAG for Training and Consultancy, Copyright &copy; <span id="currentYear"></span></p>
-      <div class="social-media">
-        <a href="https://facebook.com" target="_blank"><img src="img/facebook-brands-solid.svg" alt="Facebook"></a>
-        <a href="https://x.com" target="_blank"><img src="img/square-x-twitter-brands-solid.svg" alt="X"></a>
-        <a href="https://linkedin.com" target="_blank"><img src="img/linkedin-brands-solid.svg" alt="LinkedIn"></a>
+      <div class="container">
+        <p>PEMAG for Training and Consultancy, Copyright &copy; <span id="currentYear"></span></p>
+        <div class="social-media" aria-label="Social media links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+            <img src="img/facebook-brands-solid.svg" alt="Facebook" width="20" height="20">
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (Twitter)">
+            <img src="img/square-x-twitter-brands-solid.svg" alt="X (Twitter)" width="20" height="20">
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn">
+            <img src="img/linkedin-brands-solid.svg" alt="LinkedIn" width="20" height="20">
+          </a>
+        </div>
       </div>
     </footer>
 
     <script>
-      // Get the current year
-      const year = new Date().getFullYear();
-      // Set the year in the footer
-      document.getElementById('currentYear').textContent = year;
+      // Set current year in footer
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
